@@ -1,0 +1,103 @@
+.n-layout{
+	background: #CFC4C4;
+	padding: 15px;
+	min-height: 640px;
+}
+.n-layout-main{
+	width:90%;
+    margin: 0 auto;
+    background: #E2D9D9;
+    border-radius: 17px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 13px #1D1A1A;
+}
+h2{
+	background: #83B42F;
+	height: 43px;
+	padding: 8px;
+	width: 60%;
+	text-align: center;
+	margin: 20px auto;
+    border-radius: 14px;
+
+}
+form,table{
+	width: 100%
+}
+table tr th{
+	height: 80px;
+	font-size: 17px;
+	padding:10px 0;
+	color:#83B42F;
+	
+}
+table tr th:last-child{
+	text-align: left;
+	position: relative;
+}
+table tr th:last-child p{
+	font-size:13px;
+	color:#930;
+	position:absolute;
+	left:9px;
+	top:64px;
+	display:inline;			
+
+}
+/*字符数*/
+.count{
+    display:inline;
+	color:#F00;
+	margin-left:110px;
+	font-size:14px;
+	/*visibility:hidden;*/
+	position:absolute;
+	right:29px;
+	top:26px;
+	
+	
+}
+/*小图标*/
+.no{
+	background-image:url(../images/no-1.jpg);
+	width:12px;
+	height:12px;
+	display:inline-block;
+	border-radius: 10px;
+	background-size: 12px;
+	}
+	
+.ok{
+	background-image:url(../images/ok.png);
+	width:12px;
+	height:12px;
+	display:inline-block;
+	border-radius: 6px;
+	
+}
+table tr input{
+	height: 32px;
+	width: 70%;
+	padding: 0 16px;
+	border-radius: 7px;
+	border:1px solid #83B42F;
+}
+.sub{
+	display: block;
+	padding:10px 20px;
+	background: #83B42F;
+	border-radius: 10px;
+	box-shadow: 3px 2px 2px #A89D9D;
+	width: 40%;
+	margin:0 auto;
+	border:1px solid #489843;
+	font-size: 15px;
+	color:#FFFFFF;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+a:active{
+	background: #EE8640;
+}

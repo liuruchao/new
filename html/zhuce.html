@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+	<title>注册</title>
+	<script type="text/javascript" src="../js/play.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/zhuce.css">
+</head>
+<body>
+  <div class="n-layout">
+   <div class="n-layout-main">
+	<a href="../index.php"><h2>进入公告栏</h2></a>
+	<form method="post" action="../php/zhuce.php">
+		<table>
+			<tr>
+				<th>用户名：</th>
+				<th><input type="text" name="name" id="input-name"><p id="p-name"> </p>
+			   </th>
+			</tr>
+			
+			<tr>
+				<th>学号：</th>
+				<th><input type="text" name="number" id="input-numbers"><p id="p-numbers"> </p></th>
+			</tr>
+			
+			<tr>
+				<th>密码：</th>
+				<th><input type="password" name="passworld" id="input-password"><p id="p-password"> </p></th>
+			</tr>
+			<tr>
+				<th>确认密码：</th>
+				<th><input type="password"  id="input-r-password"><p id="p-r-password"> </p></th>
+			</tr>
+		</table>
+		<input type="submit" value="注册" class="sub">
+	</form>
+   </div>
+  </div>	
+</body>
+</html>
+			

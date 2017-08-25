@@ -1,0 +1,72 @@
+/*主体*/
+
+/*头部*/
+header{
+	background: url(../images/top.jpg) no-repeat;
+	background-size: cover;
+	height: 80px;
+	border-bottom:6px double #5BB657;
+}
+header>h1{
+	display: inline-block;
+	color:#FFF;
+	margin-left: 31px;
+	margin-top:16px;
+}
+header>a{
+	display: inline-block;
+	float: right;
+	width: 60px;
+	text-align: center;
+	color:#FFF;
+	border-radius: 5px;
+	margin-right: 25px;
+	background: #83B42F;
+	height: 30px;
+	line-height: 30px;
+	margin-top:21px;
+}
+/*搜索内容*/
+main{
+	padding: 20px;
+	min-height: 510px;
+}
+main .n-content-box>.user{
+	text-align: left;
+	margin-top: 20px;
+	font-size: 15px;
+	color:#9B9595;
+
+}
+.n-content-box>.content{
+   margin-top: 15px;
+}
+.n-content-box>.time{
+	text-align: right;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	color:#9B9595;
+	border-bottom: 1px solid #83B42F;
+}
+/*尾部*/
+footer{
+	background: #79796E;
+ 	width:100%;
+ 	max-width: 640px;/*设计图的原因 不让它放大*/
+    min-width: 300px;/*为了更好的布局*/
+ 	height:50px;
+ 	line-height: 50px;
+ 	color:#FFF;
+ 	text-align: center;
+}	
+/*向上置顶*/
+#btn{
+	position: fixed;
+	left:85%;
+	bottom:66px;
+	width:40px;
+	z-index: 1100;
+	border-radius: 20px;
+}
+

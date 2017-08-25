@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+	<title>发布信息</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/zhuce.css">
+</head>
+<body>
+  <div class="n-layout">
+   <div class="n-layout-main">
+	<a href="../index.php"><h2>进入公告栏</h2></a>
+	<form method="post" action="../php/fabu.php">
+		<table>
+			
+			<tr>
+				<th>学号：</th>
+				<th><input type="text" name="number"></th>
+			</tr>
+			<tr>
+				<th>信息标签：</th>
+				<th><select name="biaoqian">
+					<option value="失物招领">失物招领</option>
+					<option value="二手出售">二手出售</option>
+					<option value="广告发布">广告发布</option>
+				</select></th>
+			</tr>
+			<tr>
+				<th>内容：</th>
+				<th><textarea name="content" rows="10" style="width:70%;"></textarea></th>
+			</tr>
+		</table>
+		<input type="submit" value="发布" class="sub">
+	</form>
+   </div>
+  </div>	
+</body>
+</html>
+			
