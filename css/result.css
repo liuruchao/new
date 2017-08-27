@@ -31,17 +31,17 @@ main{
 	padding: 20px;
 	min-height: 510px;
 }
-main .n-content-box>.user{
+main .n-content-box .user,.title{
 	text-align: left;
 	margin-top: 20px;
 	font-size: 15px;
 	color:#9B9595;
 
 }
-.n-content-box>.content{
+.n-content-box .content,.entry{
    margin-top: 15px;
 }
-.n-content-box>.time{
+.n-content-box .time,.meta{
 	text-align: right;
 	margin-top: 15px;
 	padding-bottom: 10px;
@@ -76,4 +76,6 @@ footer{
 	border-radius: 10px;
 	margin-right: 5px;
 }
+/*长院简讯*/
+
 

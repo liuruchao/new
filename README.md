@@ -5,5 +5,5 @@
 
 ```
  cd /usr/share/nginx/html/new
- git pull
+ sudo git pull
 ```

@@ -79,7 +79,7 @@ if($query&&mysql_num_rows($query)){
 		<!-- 导航 -->
 		<nav class="n-nav">
 			<ol class="breadcrumb n-nav-i">
-	          <li><a href="html/news.html">长院资讯</a></li>
+	          <li><a href="php/news.php">长院简讯</a></li>
 	          <li><a href="http://m.baidu.com">度娘</a></li>
 	          <li class="active">公告栏</li>
             </ol>
