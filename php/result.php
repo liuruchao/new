@@ -35,9 +35,9 @@ if($query&&mysql_num_rows($query)){
 					foreach($data as $value){
 						?>
 						<div class="n-content-box">
-							<p class="user">用户名:<span><?php echo $value['name']?></span></p>
+							<p class="user"><img src="../images/katong.jpg"><span><?php echo $value['name']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
-							<p class="time">发布时间：<span><?php echo $value['dateline']?></span></p>
+							<p class="time"><span><?php echo $value['dateline']?></span></p>
 						</div>
 						<?php
 					}

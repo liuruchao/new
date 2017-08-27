@@ -6,6 +6,7 @@ body{background: #f5f5f5;}
     min-width: 300px;/*为了更好的布局*/
     margin: 0 auto;
     position: relative;
+    background: #DDD7D7;
  }
  /*头部搜索*/
  .n-header{
@@ -13,6 +14,7 @@ body{background: #f5f5f5;}
  	left:0;
  	top:0;
  	width:100%;
+ 	margin: 0 auto;
  	max-width: 640px;/*设计图的原因 不让它放大*/
     min-width: 300px;/*为了更好的布局*/
  	height:50px;
@@ -23,13 +25,13 @@ body{background: #f5f5f5;}
  	max-width: 640px;/*设计图的原因 不让它放大*/
     /*min-width: 300px;/*为了更好的布局*/*/
     margin: 0 auto;
-    background:#83B42F;
+    background:#C2C55A;
     height:50px;
     position: relative;
  }	
  /*搜索表单*/
  .n-header-box > form{
- 	width:100%;
+ 	width:87%;
  	padding-left: 53px;
  	padding-right: 22px;
  }
@@ -55,6 +57,15 @@ body{background: #f5f5f5;}
  	position:absolute;
  	top: 15px;
  	left:56px;
+ }
+ .n-header-box .n-zhuce{
+ 	position: absolute;
+ 	right: 5px;
+ 	top: 2px;
+ 	font-weight: bold;
+ 	color:#0A0B0A;
+ 	font-size: 17px;
+
  }	
  /*主体部分*/
  .n-main{
@@ -62,14 +73,23 @@ body{background: #f5f5f5;}
  	max-width: 640px;/*设计图的原因 不让它放大*/
     min-width: 300px;/*为了更好的布局*/
     margin-top: 50px;
-    margin-bottom: 50px;
+    
  }
-.n-main>img{
+/*.n-main>.lunbo{
 	width: 100%;
-}
+	height: 300px;
+}*/
 .n-main-content{
 	width: 100%;
-	padding: 20px;
+
+	
+}
+.n-content-box{
+	padding: 10px;
+	border-radius: 10px;
+	background: #FFF;
+	margin-bottom: 5px;
+	box-shadow: 1px 1px 1px #B3B2B2;
 }
 .n-main-content>h3{
 	text-align: center;
@@ -82,6 +102,13 @@ body{background: #f5f5f5;}
 	color:#9B9595;
 
 }
+.n-content-box>.user img{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+
 .n-content-box>.content{
    margin-top: 15px;
 }
@@ -91,66 +118,13 @@ body{background: #f5f5f5;}
 	padding-bottom: 10px;
 	font-size: 15px;
 	color:#9B9595;
-	border-bottom: 1px solid #9B9595;
-}
-
-
- /*尾部导航*/
- .n-nav{
- 	width:100%;
- 	max-width: 640px;/*设计图的原因 不让它放大*/
-    min-width: 300px;/*为了更好的布局*/
- 	position: fixed;
- 	height:50px;
- 	left:0;
- 	bottom:0;
- 	z-index: 1000;
-}	
-.n-nav>ul{
-	width: 100%;
-	max-width: 600px;
-	margin:0 auto;
-	display: flex;
-}
-.n-nav>ul>li:nth-child(n){
-	flex: 1;
 	
 }
-.n-nav>ul>li>a{
-	width: 100%;
-	height:50px;
-	display: block;
-	background:#83B42F;
-	border-radius:13px 13px 0 0;
-	border-bottom: 5px solid green;
-	box-shadow: 2px -2px 2px #7e877e;
+.n-nav .n-nav-i{
+	margin-bottom: 11px;
 }
-.n-nav>ul>li>a>span{
-	display: inline-block;
-	height:40px;
-	width: 40px;
-	margin-left: 6px;
-	margin-top:2px;
-	border-radius:50%;
-}
-.n-nav>ul>li:nth-child(1) span{
-	background: url(../images/nav-1.png) no-repeat;
-	background-size: 40px 40px;
-}
-.n-nav>ul>li:nth-child(2) span{
-	background: url(../images/nav-2.png) no-repeat;
-	background-size: 40px 40px;
-}
-.n-nav>ul>li:nth-child(3) span{
-	background: url(../images/nav-3.png) no-repeat;
-	background-size: 40px 40px;
-}
-.n-nav>ul>li>a>p,.ui-content{
-	margin-left: 50px;
-	margin-top: -37px;
-	font-size: 20px;
-	color:black;
-}
+
+ 
 /*向上置顶*/ 	 	 	
 #btn{
 	position: fixed;
@@ -159,6 +133,13 @@ body{background: #f5f5f5;}
 	width:40px;
 	z-index: 1100;
 	border-radius: 20px;
+	opacity: 0.7;
+}
+footer p{
+	line-height: 40px;
+	height: 40px;
+    text-align: center;
+    background: #C2C55A;
 }
     
 

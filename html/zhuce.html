@@ -4,38 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
 	<title>注册</title>
-	<script type="text/javascript" src="../js/play.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/zhuce.css">
+    <script src="../js/play.js"></script>
 </head>
 <body>
   <div class="n-layout">
-   <div class="n-layout-main">
-	<a href="../index.php"><h2>进入公告栏</h2></a>
+   <div class="n-layout-c">
+    <div class="n-layout-l">
+     <a href="../index.php" class="fanhui"><img src="../images/fanhui.jpg"></a>
+     <h1 class="h1-1">L</h1>
+     <h1 class="h1-2">Learning</h1>
+	
 	<form method="post" action="../php/zhuce.php">
-		<table>
-			<tr>
-				<th>用户名：</th>
-				<th><input type="text" name="name" id="input-name"><p id="p-name"> </p>
-			   </th>
-			</tr>
+		
+			<div class="ex">
+				<input type="text" name="name" id="input-name" placeholder="用户名"><p id="p-name"> </p>
 			
-			<tr>
-				<th>学号：</th>
-				<th><input type="text" name="number" id="input-numbers"><p id="p-numbers"> </p></th>
-			</tr>
+			</div>
+			<div class="ex">
+				<input type="text" name="number" id="input-numbers" placeholder="学号"><p id="p-numbers"> </p>
 			
-			<tr>
-				<th>密码：</th>
-				<th><input type="password" name="passworld" id="input-password"><p id="p-password"> </p></th>
-			</tr>
-			<tr>
-				<th>确认密码：</th>
-				<th><input type="password"  id="input-r-password"><p id="p-r-password"> </p></th>
-			</tr>
-		</table>
+			</div>
+			<div class="ex">
+				<input type="password" name="passworld" id="input-password" placeholder="密码"><p id="p-password" > </p>
+			
+			</div>
+			<div class="ex">
+				<input type="password"  id="input-r-password" placeholder="确认密码"><p id="p-r-password"> </p>
+			</div>
+			
+				
+				
+			
+		
 		<input type="submit" value="注册" class="sub">
+		
 	</form>
+	</div>
    </div>
   </div>	
 </body>

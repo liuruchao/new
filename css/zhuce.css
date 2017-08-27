@@ -1,63 +1,124 @@
 .n-layout{
-	background: #CFC4C4;
-	padding: 15px;
-	min-height: 640px;
-}
-.n-layout-main{
-	width:90%;
-    margin: 0 auto;
-    background: #E2D9D9;
-    border-radius: 17px;
-    padding: 10px;
-    margin-top: 10px;
-    box-shadow: 2px 2px 13px #1D1A1A;
-}
-h2{
-	background: #83B42F;
-	height: 43px;
-	padding: 8px;
-	width: 60%;
-	text-align: center;
-	margin: 20px auto;
-    border-radius: 14px;
-
-}
-form,table{
-	width: 100%
-}
-table tr th{
-	height: 80px;
-	font-size: 17px;
-	padding:10px 0;
-	color:#83B42F;
+	min-height: 680px;
+	background: url(../images/p3.jpg) no-repeat;
+	background-size: cover;
+    
 	
 }
-table tr th:last-child{
+.n-layout-c{
+	margin: 0 auto;
+	width: 90%;
+	position: relative;
+
+}
+.n-layout-l{
+	position: absolute;
+	top: 50px;
+	left: 9px;
+	
+	width: 100%;
+}
+.h1-1{
+	border:11px solid #FFF;
+	text-align: center;
+	width: 73px;
+	margin: 0 auto;
+	height: 73px;
+	line-height: 73px;
+	font-size: 49px;
+}
+.h1-2{
+	text-align: center;
+	margin-top: 30px;
+}
+form input{
+	width: 80%;
+    margin: 16px 29px;
+    height: 30px;
+    font-size: 17px;
+    border-bottom: 5px solid #FFF;
+    background: transparent;
+    padding: 0 5px;
+}
+.sub{
+	border:none;
+	border-radius: 15px;
+	background: #CBA160;
+	width: 80%;
+    margin: 20px 29px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    color: #FFF;
+}
+a{
+	display: block;
+}
+.sub:active{
+	background: #BC8E39;
+}
+.fanhui img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	margisn-top: -23px;
+	opacity: 0.7;
+}
+
+.ex{
 	text-align: left;
 	position: relative;
+	width: 80%;
+	margin:0 auto;
 }
-table tr th:last-child p{
+.ex p{
 	font-size:13px;
-	color:#930;
+	color:#60fbcf;
 	position:absolute;
-	left:9px;
-	top:64px;
+	left:37px;
+	top:48px;
 	display:inline;			
 
 }
-/*字符数*/
-.count{
-    display:inline;
-	color:#F00;
-	margin-left:110px;
-	font-size:14px;
-	/*visibility:hidden;*/
-	position:absolute;
-	right:29px;
-	top:26px;
-	
+input::-moz-placeholder{
+	color:#FFF;
+}
+h4{
+	display: inline-block;color:#FFF;margin-left: -17px;
+}
+.ex select{
+	border-radius: 5px;
+	width: 25%;
+	height: 25px;
+	background: rgb(156,148,148,0.8);
+	margin-left: 16px;
 	
 }
+.ex textarea{
+     border-radius: 5px;
+     background: rgb(156,148,148,0.8);
+	 margin-left: 16px;
+	 width: 76%;
+	 height: 80px;
+	 margin-top: 40px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*小图标*/
 .no{
 	background-image:url(../images/no-1.jpg);
@@ -76,28 +137,5 @@ table tr th:last-child p{
 	border-radius: 6px;
 	
 }
-table tr input{
-	height: 32px;
-	width: 70%;
-	padding: 0 16px;
-	border-radius: 7px;
-	border:1px solid #83B42F;
-}
-.sub{
-	display: block;
-	padding:10px 20px;
-	background: #83B42F;
-	border-radius: 10px;
-	box-shadow: 3px 2px 2px #A89D9D;
-	width: 40%;
-	margin:0 auto;
-	border:1px solid #489843;
-	font-size: 15px;
-	color:#FFFFFF;
-	margin-bottom: 20px;
-	margin-top: 20px;
 
-}
-a:active{
-	background: #EE8640;
-}
+

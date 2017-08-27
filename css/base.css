@@ -18,9 +18,7 @@ a{
 	color:#333;text-decoration: none;
 }
 a:hover{text-decoration: none;}
-a:active{
-	background: #EE8640;
-}
+
 input{
 	border:none;
 	outline:none;
