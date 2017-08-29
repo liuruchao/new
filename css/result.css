@@ -30,10 +30,11 @@ header>a{
 main{
 	padding: 20px;
 	min-height: 510px;
+	width: 100%;
 }
 main .n-content-box .user,.title{
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-size: 15px;
 	color:#9B9595;
 
@@ -77,5 +78,23 @@ footer{
 	margin-right: 5px;
 }
 /*长院简讯*/
+.n-content-box .pic{
+	width: 30%;
+	margin-right: 30px;
+	display: inline-block;
+	margin-top: 15px;
 
+}
+.n-content-box .post{
+	display: block;
+	border-bottom: 1px solid #83B42F;
+
+}
+.n-content-box>a:active{
+	background: #C3BCBC;
+	opacity: 0.6;
+}
+.n-content-box .entry{
+	width: 57%;
+}
 

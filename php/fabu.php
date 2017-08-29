@@ -10,7 +10,7 @@
 	$number = $_POST['number'];
 	$biaoqian = $_POST['biaoqian'];
 	$content = $_POST['content'];
-	$dateline=date("Y-m-d-H-i-s");
+	$dateline=date("m-d-D-H-i");
 
 	$strlen1=strlen($number);
 	//验证学号

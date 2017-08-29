@@ -33,17 +33,16 @@ if($query&&mysql_num_rows($query)){
 				}else{
 					foreach($data as $value){
 						?>
-						<div class="post">
+						<a class="post" href="news.show.php?id=<?php echo $value['id']?>">
 						<h3 class="title" style="color:#83B42F;font-size: 20px;"><?php echo $value['title']?><!-- 标题 --></h3>
-							<div class="entry">
+							<div class="entry f_left">
 								<!-- 描述 -->
 								<?php echo $value['description']?>
 
 							</div>
-							<div class="meta">
-								<p class="links" style="color:#E42C2C;"><a href="article.show.php?id=<?php echo $value['id']?>" class="more" style="color:#E42C2C;">查看详细</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</p>
-							</div>
-						</div>
+							<img src="<?php echo $value['picturn']?>" alt="" class="pic f_right">
+						<p class="clearfix">&nbsp&nbsp</p>
+						</a>
 						<?php
 					}
 				}
