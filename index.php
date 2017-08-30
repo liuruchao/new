@@ -79,8 +79,10 @@ if($query&&mysql_num_rows($query)){
 		<!-- 导航 -->
 		<nav class="n-nav">
 			<ol class="breadcrumb n-nav-i">
-	          <li><a href="php/news.php">长院简讯</a></li>
-	          <li><a href="http://m.baidu.com">度娘</a></li>
+	          <li><a href="php/news.php"
+	          style="font-size: 18px">长院简讯</a></li>
+	          <li><a href="http://m.baidu.com"
+	          style="font-size: 18px">度娘</a></li>
 	          <li class="active">公告栏</li>
             </ol>
 				
@@ -97,7 +99,8 @@ if($query&&mysql_num_rows($query)){
 					foreach($data as $value){
 						?>
 						<div class="n-content-box">
-							<p class="user"><img src="images/katong.jpg"><span><?php echo $value['name']?></span></p>
+							<p class="user"><img src="images/katong.jpg"><span><?php echo $value['name']?></span>
+							<span style="float: right;font-size: 12px;color:#48A3EE"><?php echo $value['biaoqian']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
 							<p class="time"><span><?php echo $value['dateline']?></span></p>
 						</div>
