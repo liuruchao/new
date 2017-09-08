@@ -143,8 +143,8 @@ body{background: #f5f5f5;}
 	width:43px;
 	height: 43px;
 	z-index: 1100;
-	border-radius: 20px;
-	opacity: 0.9;
+	border-radius: 30px;
+	opacity: 0.7;
 }
 footer p{
 	line-height: 40px;
