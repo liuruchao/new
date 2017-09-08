@@ -1,5 +1,6 @@
 <?php
 	require_once('connect.php');
+	date_default_timezone_set('Asia/shanghai');
 	//把传递过来的信息入库,在入库之前对所有的信息进行校验。
 	if(!(isset($_POST['number'])&&(!empty($_POST['number'])))){
 		echo "<script>alert('学号不能为空，请重新输入！！');window.location.href='../html/fabu.html';</script>";
@@ -10,7 +11,7 @@
 	$number = $_POST['number'];
 	$biaoqian = $_POST['biaoqian'];
 	$content = $_POST['content'];
-	$dateline=date("m-d-D-H-i");
+	$dateline=date("m-d-D-H:i");
 
 	$strlen1=strlen($number);
 	//验证学号

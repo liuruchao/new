@@ -120,7 +120,7 @@ if($query&&mysql_num_rows($query)){
 		</footer>
 		<a href="javascript:location.reload();"
 
-		><img src="images/shuaxin.jpg"
+		><img src="images/shuaxin.png"
 		class="shuaxin"></a>
 		<img src="images/63b2f6390e554258c7f66c6d94bb9c56.png" id="btn">
 	</div>
