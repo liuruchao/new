@@ -118,7 +118,10 @@ if($query&&mysql_num_rows($query)){
 		<footer>
 		    <p>客官真的没有了。。</p>
 		</footer>
-		
+		<a href="javascript:location.reload();"
+
+		><img src="images/shuaxin.jpg"
+		class="shuaxin"></a>
 		<img src="images/63b2f6390e554258c7f66c6d94bb9c56.png" id="btn">
 	</div>
 </body>
