@@ -52,7 +52,7 @@ $row1=mysql_fetch_assoc($query1);
 				?>
 		
 		
-		<a href="../html/fabu.html" class="left sub">发布消息</a>
+		<a href="../html/fabuone.php?number=<?php echo $number?>" class="left sub">发布消息</a>
 		<a href="../index.php" class="right sub">退出登陆</a>
      </div>
  </div>	

@@ -1,3 +1,7 @@
+<?php 
+require_once('../php/connect.php');
+$number=$_GET["number"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +22,7 @@
 	<form method="post" action="../php/fabu.php">
 		
 				
-				<input type="text" name="number" placeholder="学号">
+				<input type="text" name="number" value="<?php echo $number?>" readonly="readonly">
                 <div class="ex">
                  <h4>信息标签：</h4>
 				<select name="biaoqian">
