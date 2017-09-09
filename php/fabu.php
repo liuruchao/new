@@ -21,8 +21,8 @@
 	}
 	$insertsql = "insert into content(number, biaoqian, content,dateline) values('$number', '$biaoqian', '$content','$dateline')";
 	if(mysql_query($insertsql)){
-		echo "<script>alert('发布成功');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
+		echo "<script>alert('发布成功');window.location.href='person.php?number=$number';</script>";
 	}else{
-		echo "<script>alert('发布失败');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
+		echo "<script>alert('发布失败');window.location.href='person.php?number=$number';</script>";
 	}
 ?>
