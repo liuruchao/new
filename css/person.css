@@ -28,6 +28,11 @@
 }
 .btm>h3{
 	margin-left:10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #83B42F;
+	width: 90%;
 }
 /*主体消息*/
 .n-content-box{
@@ -65,12 +70,13 @@
 	border:none;
 	border-radius: 15px;
 	background: #CBA160;
-	width: 30%;
+	width: 37%;
     margin: 20px 29px;
     height: 30px;
     font-size: 17px;
     text-align: center;
     color: #FFF;
+    line-height: 30px;
 }
 .sub:active{
 	background: #BC8E39;

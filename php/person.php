@@ -36,7 +36,7 @@ $row1=mysql_fetch_assoc($query1);
      	<h3>历史信息...</h3>
      	<?php
 				if(empty($data)){	
-					echo "快来发布你的信息吧";
+					echo '<p style="text-align:center">快来发布你的信息吧</P>';
 				}else{
 					foreach($data as $value){
 						?>
