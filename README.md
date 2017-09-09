@@ -5,10 +5,10 @@
 
 ```
  cd /usr/share/nginx/html/new
- // sudo git pull
-$ ll
+ 
+
 $ cd ..
-$ rm -rf new
+
 $ ll
 $ sudo rm -rf new
 $ ll

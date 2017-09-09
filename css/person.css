@@ -1,0 +1,88 @@
+/*上部*/
+.top{
+	width: 100%;
+	position: relative;
+	height: 110px;
+	background: #4E4C4C;
+}
+/*头部*/
+.tou{
+	position: absolute;
+	left: 36%;
+	top: 28%;
+	width: 30%;
+}
+.tou img{
+     width: 100%;
+     border:3px solid #FFF;
+     border-radius: 50%;
+}
+.tou h2{
+	color:#272424;
+	text-align: center;
+}
+/*下部*/
+.btm{
+	margin-top: 80px;
+	margin-bottom: 62px;
+}
+.btm>h3{
+	margin-left:10px;
+}
+/*主体消息*/
+.n-content-box{
+	padding: 10px;
+	border-radius: 10px;
+	background: #FFF;
+	margin-bottom: 5px;
+	box-shadow: 1px 1px 1px #B3B2B2;
+}
+.n-content-box>.time{
+	text-align: left;
+	margin-top: 20px;
+	font-size: 15px;
+	color:#9B9595;
+
+}
+
+.n-content-box>.content{
+   margin-top: 15px;
+}
+.n-content-box>.delet{
+	text-align: right;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	color:#9B9595;
+	display: block;
+	margin-right: 20px;
+	color:red;
+	
+}
+/*按钮*/
+.sub{
+	display: inline-block;
+	border:none;
+	border-radius: 15px;
+	background: #CBA160;
+	width: 30%;
+    margin: 20px 29px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    color: #FFF;
+}
+.sub:active{
+	background: #BC8E39;
+}
+.left{
+	position:fixed;
+	left:3%;
+	bottom: 0%;
+
+}
+.right{
+	position: fixed;
+	right: 3%;
+	bottom: 0%;
+}
