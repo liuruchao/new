@@ -140,7 +140,7 @@ body{background: #f5f5f5;}
 /*向上置顶*/ 	 	 	
 #btn{
 	position: fixed;
-	left:85%;
+	left:85.5%;
 	bottom:66px;
 	width:40px;
 	z-index: 1100;
@@ -155,7 +155,20 @@ footer p{
     text-align: center;
     background: #C2C55A;
 }
-    
+.ma{
+	position: fixed;
+	left:85%;
+	bottom:160px;
+	width:43px;
+	height: 43px;
+	z-index: 1100;
+	opacity: 0.9;
+	border-radius: 20px;
+	background: url(../images/ma.jpg) no-repeat;
+	background-size: 49px 46px;
+	background-position: -3px -4px;
+	
+}  
 
  	
  	

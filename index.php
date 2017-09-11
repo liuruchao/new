@@ -173,6 +173,18 @@ $(function () { $('#myModal').modal({
 		<footer>
 		    <p>客官真的没有了。。</p>
 		</footer>
+		<div class="btn btn-default ma" title="请关注作者微信"  id="app" 
+			data-container="body" data-toggle="popover" data-placement="left" 
+			data-content="">
+		
+	   </div>
+      <script>
+    $('#app').popover({
+        trigger : 'click',//鼠标以上时触发弹出提示框
+        html:true,//开启html 为true的话，data-content里就能放html代码了
+        content:"<img src='images/liu.jpg' width=150>"
+    });
+</script>
 		<a href="javascript:location.reload();"
 
 		><img src="images/shuaxin.png"
