@@ -1,6 +1,7 @@
 <?php 
 require_once('php/connect.php');
-$sql = "select distinct name,content,dateline,biaoqian from users,content where content.number=users.number order by dateline desc";
+$sql = "select distinct content.id,name,content,dateline,biaoqian from users,content where content.number=users.number order by dateline desc";
+
 $query = mysql_query($sql);
 if($query&&mysql_num_rows($query)){
 	while($row = mysql_fetch_assoc($query)){
@@ -17,7 +18,7 @@ if($query&&mysql_num_rows($query)){
 	<title>长院信息公布平台</title>
 	<!-- 新 Bootstrap 核心 CSS 文件 -->
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
- 
+
  
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
@@ -28,7 +29,11 @@ if($query&&mysql_num_rows($query)){
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript"  src="js/top.js"></script>
-	
+<!-- jquery -->
+
+
+
+
 </head>
 <body>
 	<!-- 主体 -->
@@ -102,8 +107,12 @@ if($query&&mysql_num_rows($query)){
 							<p class="user"><img src="images/katong.jpg"><span><?php echo $value['name']?></span>
 							<span style="float: right;font-size: 12px;color:#48A3EE"><?php echo $value['biaoqian']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
+							
+							
 							<p class="time">
-							<a class="" data-toggle="modal" data-target="#myModal" data-show="false">
+	<span><?php echo $value['dateline']?></span>
+    
+  <a class="" data-toggle="modal" data-target="#myModal" data-show="false">
 	<span class="glyphicon glyphicon-folder-close"></span> 评论
 </a>
 <!-- 模态框（Modal） -->
@@ -139,9 +148,16 @@ $(function () { $('#myModal').modal({
 })});
 
 </script>
-							<span><?php echo $value['dateline']?></span>
-							
+
+    
+   
+  
+    
 							</p>
+							<p class="ping-btm">
+								
+							</p>
+						<span class="clearfix"></span>	
 						</div>
 						<?php
 					}
@@ -149,7 +165,7 @@ $(function () { $('#myModal').modal({
 				?>
 			</div>
 
-			
+		
 
 			
 
@@ -159,11 +175,12 @@ $(function () { $('#myModal').modal({
 		</footer>
 		<a href="javascript:location.reload();"
 
-		><img src="images/shuaxin.png"
+		><img src="images/reload.png"
 		class="shuaxin"></a>
 		<img src="images/63b2f6390e554258c7f66c6d94bb9c56.png" id="btn">
 	</div>
 </body>
+
 </html>
 
 

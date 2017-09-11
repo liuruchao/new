@@ -113,7 +113,7 @@ body{background: #f5f5f5;}
    margin-top: 15px;
 }
 .n-content-box .time>span{
-	
+	margin-left: 50%;
 	margin-top: 15px;
 	padding-bottom: 10px;
 	font-size: 15px;
@@ -131,6 +131,7 @@ body{background: #f5f5f5;}
   margin-left: 5px;
   border:1px solid #9B9595;
 }
+
 .n-nav .n-nav-i{
 	margin-bottom: 11px;
 }
@@ -146,6 +147,7 @@ body{background: #f5f5f5;}
 	border-radius: 20px;
 	opacity: 0.7;
 }
+
 
 footer p{
 	line-height: 40px;
