@@ -102,7 +102,46 @@ if($query&&mysql_num_rows($query)){
 							<p class="user"><img src="images/katong.jpg"><span><?php echo $value['name']?></span>
 							<span style="float: right;font-size: 12px;color:#48A3EE"><?php echo $value['biaoqian']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
-							<p class="time"><span><?php echo $value['dateline']?></span></p>
+							<p class="time">
+							<a class="" data-toggle="modal" data-target="#myModal" data-show="false">
+	<span class="glyphicon glyphicon-folder-close"></span> 评论
+</a>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					留下你的评论呗（功能未开放，请期待）
+				</h4>
+			</div>
+			<form method="post" action="" class="pinglun">
+			
+			<input type="text" name="number" class="modal-body" placeholder="学号：" readonly="readonly" value="123455">
+			<input  class="modal-body" type="text" name="pinglun" placeholder="内容：" readonly="readonly" value="敬请期待">
+			
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<input type="submit" class="btn btn-default" name="" value="提交">
+			</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<script>
+$(function () { $('#myModal').modal({
+	keyboard: true
+})});
+
+</script>
+							<span><?php echo $value['dateline']?></span>
+							
+							</p>
 						</div>
 						<?php
 					}
