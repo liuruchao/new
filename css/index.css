@@ -169,6 +169,16 @@ footer p{
 	background-position: -3px -4px;
 	
 }  
+.ping-btm{
+	color:#6F1C1C;
+	margin-bottom: 0;
+}
+.shuaxin:active{
+	background: #766767;
+}
+.shua:active{
+	border:4px solid #766767;
+}
 
  	
  	

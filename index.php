@@ -1,6 +1,6 @@
 <?php 
 require_once('php/connect.php');
-$sql = "select distinct content.id,name,content,dateline,biaoqian from users,content where content.number=users.number order by dateline desc";
+$sql = "select distinct pinglun,content.id,name,content,dateline,biaoqian from users,content where content.number=users.number order by dateline desc";
 
 $query = mysql_query($sql);
 if($query&&mysql_num_rows($query)){
@@ -124,14 +124,14 @@ if($query&&mysql_num_rows($query)){
 					&times;
 				</button>
 				<h4 class="modal-title" id="myModalLabel">
-					留下你的评论呗（功能未开放，请期待）
+					留下你的评论呗！
 				</h4>
 			</div>
-			<form method="post" action="" class="pinglun">
+			<form method="post" action="php/pinglun.php" class="pinglun">
 			
-			<input type="text" name="number" class="modal-body" placeholder="学号：" readonly="readonly" value="123455">
-			<input  class="modal-body" type="text" name="pinglun" placeholder="内容：" readonly="readonly" value="敬请期待">
-			
+			<input style="width:1%;" type="text" name="id" class="modal-body"  value="<?php echo $value['id']?>" readonly="readonly">
+			<input  style="width:17%;padding-left: 0;padding-right: 0;" class="modal-body" type="text" name="qian"  value="匿名评论 :"  readonly="readonly">
+			<input  class="modal-body" type="text" name="pinglun" >
 			
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -157,7 +157,9 @@ $(function () { $('#myModal').modal({
 							<p class="ping-btm">
 								
 							</p>
-						<span class="clearfix"></span>	
+						<span class="clearfix"></span>	<p class="ping-btm">
+								<?php echo  $value['pinglun']?>
+							</p>	
 						</div>
 						<?php
 					}
@@ -189,7 +191,7 @@ $(function () { $('#myModal').modal({
 
 		><img src="images/shuaxin.png"
 		class="shuaxin"></a>
-		<img src="images/63b2f6390e554258c7f66c6d94bb9c56.png" id="btn">
+		<img src="images/63b2f6390e554258c7f66c6d94bb9c56.png" id="btn" class="shua">
 	</div>
 </body>
 

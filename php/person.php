@@ -1,7 +1,7 @@
  <?php 
 require_once('connect.php');
 $number=$_GET["number"];
-$sql = "select distinct content.id,name,content,dateline,biaoqian from users,content where users.number=$number  and content.number=users.number order by dateline desc";
+$sql = "select distinct pinglun,content.id,name,content,dateline,biaoqian from users,content where users.number=$number  and content.number=users.number order by dateline desc";
 $query = mysql_query($sql);
 if($query&&mysql_num_rows($query)){
 	while($row = mysql_fetch_assoc($query)){
@@ -45,6 +45,9 @@ $row1=mysql_fetch_assoc($query1);
 							<span style="float: right;font-size: 12px;color:#48A3EE"><?php echo $value['biaoqian']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
 							<a href="del.handle.php?id=<?php echo $value['id']?>" class="delet">删除</a>
+							<p class="ping-btm">
+								<?php echo  $value['pinglun']?>
+							</p>
 		</div>
 		<?php
 					}
