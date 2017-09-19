@@ -37,12 +37,12 @@ $row1=mysql_fetch_assoc($query1);
      <div class="top">
      	 <div class="tou">
      	 	<img src="../images/katong.jpg" alt="">
-     	 	<h2><?php echo $row1['name']?></h2>
+     	 	<h2 style="font-size: 20px;font-weight: bold;margin-top: 10px;"><?php echo $row1['name']?></h2>
      	 </div>
      </div>
     <!-- 下部 -->
      <div class="btm">
-     	<h3>历史信息...</h3>
+     	<h3 style="font-size: 15px;font-weight: bold;"><em>历史信息...</em></h3>
      	<?php
 				if(empty($data)){	
 					echo '<p style="text-align:center">快来发布你的信息吧</P>';
