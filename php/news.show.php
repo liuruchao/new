@@ -37,7 +37,7 @@
   <main>
   	 <h3> <?php echo $row['description']?> </h3>
   	 <img src="<?php echo $row['picturn']?>">
-  	 <p> <?php echo $row['content']?> </p>
+  	 <p style="font-size: 15px;"> <?php echo $row['content']?> </p>
   </main>
   <footer>
   	<p>客官真的没有了。。</p>

@@ -174,7 +174,7 @@ footer p{
 	margin-bottom: 0;
 }
 .shuaxin:active{
-	background: #766767;
+	border:4px solid #766767;
 }
 .shua:active{
 	border:4px solid #766767;
