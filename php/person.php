@@ -44,7 +44,7 @@ $row1=mysql_fetch_assoc($query1);
 							<p class="time"><span><?php echo $value['dateline']?></span></p>
 							<span style="float: right;font-size: 12px;color:#48A3EE"><?php echo $value['biaoqian']?></span></p>
 							<p class="content"><?php echo $value['content']?></p>
-							<a href="del.handle.php?id=<?php echo $value['id']?>" class="delet">删除</a>
+							<a href="del.handle.php?id=<?php echo $value['id']?>" class="delet glyphicon glyphicon-trash"></a>
 							<p class="ping-btm">
 								<?php echo  $value['pinglun']?>
 							</p>

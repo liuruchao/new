@@ -66,10 +66,10 @@ if($query&&mysql_num_rows($query)){
 	<!-- 轮播（Carousel）项目 -->
 	<div class="carousel-inner">
 		<div class="item active">
-			<img src="images/tu2.jpg" alt="First slide">
+			<img src="images/tu3.jpg" alt="First slide">
 		</div>
 		<div class="item">
-			<img src="images/tu3.jpg" alt="Second slide">
+			<img src="images/tu2.jpg" alt="Second slide">
 		</div>
 		<div class="item">
 			<img src="images/tu1.jpg" alt="Third slide">
